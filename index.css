@@ -1,0 +1,1018 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+/* BODY */
+body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Electrolize', sans-serif; /* Apply Electrolize font to the whole document */
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    background-color: black;
+    padding: 10px 20px; /* Add padding */
+}
+
+.navbar .navbar-left h3 {
+    font-family: 'Electrolize', sans-serif; /* Apply Electrolize font to the navbar title */
+    font-size: 20px; /* Adjust font size */
+}
+
+.navbar .navbar-right .a-ele {
+    padding: 10px 20px; /* Add padding */
+    margin: 0 5px; /* Adjust margin */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white; /* Add border */
+    border-radius: 20px; /* Add border-radius */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.navbar .navbar-right .a-ele:hover {
+    background-color: white;
+    color: black;
+}
+
+/* HOME */
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+/* BODY */
+body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Electrolize', sans-serif; /* Apply Electrolize font to the whole document */
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    background-color: black;
+    padding: 10px 20px; /* Add padding */
+}
+
+.navbar .navbar-left h3 {
+    font-family: 'Electrolize', sans-serif; /* Apply Electrolize font to the navbar title */
+    font-size: 20px; /* Adjust font size */
+}
+
+.navbar .navbar-right .a-ele {
+    padding: 10px 20px; /* Add padding */
+    margin: 0 5px; /* Adjust margin */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white; /* Add border */
+    border-radius: 20px; /* Add border-radius */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.navbar .navbar-right .a-ele:hover {
+    background-color: white;
+    color: black;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 70px 10%;
+    min-height: 100vh;
+    gap: 100px;
+}
+
+.home-left {
+    width: 50%;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.home-right {
+    width: 50%;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.home-left h2 {
+    font-size: 20px; /* Adjust font size */
+}
+
+.home-left h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /* Add margin */
+}
+
+.home-left h4 {
+    font-size: 20px; /* Adjust font size */
+    margin-top: 20px; /* Add margin */
+}
+
+.home-right {
+    width: 50%;
+}
+
+.home-sci {
+    display: flex;
+    margin-top: 20px; /* Add margin */
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #aee064;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #aee064;
+    text-decoration: none;
+    margin-right: 15px; /* Add margin */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.home-sci a:hover {
+    background-color: #aee064;
+    color: #000;
+    box-shadow: 0 0 20px #aee064;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #aee064;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px; /* Add margin */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #aee064, 0 0 25px #aee064, 0 0 50px #aee064, 0 0 200px #aee064;
+}
+.about {
+    background-color: transparent;
+    position: absolute;
+    left: 10%;
+    padding-bottom: 5px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+     /* Add margin to create space between sections */
+}
+
+.about-text h2 {
+    font-size: 30px;
+    
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    
+}
+
+.education {
+    margin-top: 50px; /* Add margin to create space between sections */
+}
+
+
+
+/* EDUCATION */
+
+.education {
+    margin-top: 50px; /* Add margin top to create space between sections */
+    margin-bottom: 50px; /* Add margin bottom to create space between sections */
+    background-color: black;
+    text-align: center;
+    top: 25%;
+}
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.subtitle span {
+    color: #aee064; /* Adjust color */
+}
+
+.education h2 {
+    text-align: center; /* Apply text alignment to the education heading */
+}
+.time-line{
+    width: 1000px;
+    margin: 100px auto;
+    position: relative;
+}
+.time-line::after{
+    content: '';
+    position: absolute;
+    right: 50%;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    border-radius: 50%;
+    animation: LineAnimated 5s linear forwards;
+}
+@keyframes LineAnimated{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%
+    }
+}
+.container{
+    width: 47%;
+    position: relative;
+    padding: 10px 10px;
+    animation: Animate-Container 1s linear forwards;
+    opacity: 0;
+    animation-delay: var(--dly)
+}
+@keyframes Animate-Container{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(even){
+    right: -50%;
+}
+.container:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    left: -12px;
+    border-radius: 50px;
+    z-index: 10;
+}
+.container:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    right: -18px;
+    border-radius: 25px;
+    z-index: 10;
+}
+.text-content{
+    padding: 20px 30px;
+    background: whitesmoke;
+    border-radius: 13px;
+    box-shadow: 0 5px 10px #fff;
+    
+}
+.text-content h2{
+    font-size: 25px;
+    color: #000;
+
+}
+.text-content p{
+    font-size: 13px;
+    margin-top: 10px;
+    color: #000;
+}
+
+
+/* Adjust timeline animation */
+@keyframes Animate-Container {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adjust progress bar and other styles as needed for the rest of the sections */
+/* SKILLS */
+.Skills {
+    padding: 70px 0; /* Add padding */
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.subtitle span {
+    color: #aee064; /* Adjust color */
+}
+
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content */
+    gap: 20px; /* Add gap between items */
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content */
+}
+
+.skills-group {
+    flex: 1;
+    padding-right: 30px; /* Adjust padding */
+}
+
+.bar {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+    color: #fff;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 5px;
+    background-color: #ccc;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.technical-bars .bar .progress-line span {
+    height: 5px;
+    background-color: #aee064;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 80%;
+}
+.progress-line.css span {
+    width: 80%;
+}
+.progress-line.java span {
+    width: 70%;
+}
+.progress-line.sql span{
+    width: 60%;
+}
+.progress-line.telugu span {
+    width: 90%;
+}
+.progress-line.english span {
+    width: 75%;
+}
+.progress-line.hindi span {
+    width: 60%;
+}
+.progress-line.team span {
+    width: 75%;
+}
+.progress-line.problem span {
+    width: 75%;
+}
+.progress-line.communication span {
+    width: 75%;
+}
+
+
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span::after {
+    content: attr(data-progress);
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+.progress-line span::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #fff;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* PROJECTS */
+.Projects {
+    padding: 70px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.subtitle span {
+    color: #aee064; /* Adjust color */
+}
+
+.Projects h2 {
+    font-size: 40px;
+    color: #fff; /* Adjust color */
+    margin-bottom: 40px; /* Add margin */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Add gap between cards */
+}
+
+.card {
+    background-color: #fff;
+    width: 18rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #000;
+    padding: 70px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.contact-info p {
+    font-size: 18px; /* Adjust font size */
+    color: #fff; /* Adjust color */
+    margin-bottom: 20px; /* Add margin */
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #aee064;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 200px cyan;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.footer p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+
+.home-left {
+    width: 50%;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.home-right {
+    width: 50%;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.home-left h2 {
+    font-size: 20px; /* Adjust font size */
+}
+
+.home-left h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /* Add margin */
+}
+
+.home-left h4 {
+    font-size: 20px; /* Adjust font size */
+    margin-top: 20px; /* Add margin */
+}
+
+.home-right {
+    width: 50%;
+}
+
+.home-sci {
+    display: flex;
+    margin-top: 20px; /* Add margin */
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #aee064;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #aee064;
+    text-decoration: none;
+    margin-right: 15px; /* Add margin */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.home-sci a:hover {
+    background-color: #aee064;
+    color: #000;
+    box-shadow: 0 0 20px #aee064;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #aee064;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px; /* Add margin */
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #aee064, 0 0 25px #aee064, 0 0 50px #aee064, 0 0 200px #aee064;
+}
+.about {
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    padding-bottom: 5px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+     /* Add margin to create space between sections */
+}
+
+.about-text h2 {
+    font-size: 30px;
+    
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    
+}
+
+.education {
+    margin-top: 50px; /* Add margin to create space between sections */
+}
+
+/* EDUCATION */
+
+.education{
+    background-color: black;
+    text-align: center;
+    top:25%;
+}
+.education h2 {
+    text-align: center; /* Apply text alignment to the education heading */
+}
+.time-line{
+    width: 1000px;
+    margin: 100px auto;
+    position: relative;
+}
+.time-line::after{
+    content: '';
+    position: absolute;
+    right: 50%;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    border-radius: 50%;
+    animation: LineAnimated 5s linear forwards;
+}
+@keyframes LineAnimated{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%
+    }
+}
+.container{
+    width: 47%;
+    position: relative;
+    padding: 10px 10px;
+    animation: Animate-Container 1s linear forwards;
+    opacity: 0;
+    animation-delay: var(--dly)
+}
+@keyframes Animate-Container{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(even){
+    right: -50%;
+}
+.container:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    left: -12px;
+    border-radius: 50px;
+    z-index: 10;
+}
+.container:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(#aee064,#aee064);
+    top: 0;
+    right: -18px;
+    border-radius: 25px;
+    z-index: 10;
+}
+.text-content{
+    padding: 20px 30px;
+    background: whitesmoke;
+    border-radius: 13px;
+    box-shadow: 0 5px 10px #fff;
+    
+}
+.text-content h2{
+    font-size: 25px;
+    color: #000;
+
+}
+.text-content p{
+    font-size: 13px;
+    margin-top: 10px;
+    color: #000;
+}
+
+
+/* Adjust timeline animation */
+@keyframes Animate-Container {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adjust progress bar and other styles as needed for the rest of the sections */
+/* SKILLS */
+.Skills {
+    padding: 70px 0; /* Add padding */
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.subtitle span {
+    color: #aee064; /* Adjust color */
+}
+
+.sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content */
+    gap: 20px; /* Add gap between items */
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content */
+}
+
+.skills-group {
+    flex: 1;
+    padding-right: 30px; /* Adjust padding */
+}
+
+.bar {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+    color: #fff;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 5px;
+    background-color: #ccc;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.technical-bars .bar .progress-line span {
+    height: 5px;
+    background-color: #aee064;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 80%;
+}
+
+.progress-line.js span {
+    width: 75%;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span::after {
+    content: attr(data-progress);
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+.progress-line span::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #fff;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* PROJECTS */
+.Projects {
+    padding: 70px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.Projects h2 {
+    font-size: 40px;
+    color: #fff; /* Adjust color */
+    margin-bottom: 40px; /* Add margin */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Add gap between cards */
+}
+
+.card {
+    background-color: #fff;
+    width: 18rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #000;
+    padding: 70px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.contact-info p {
+    font-size: 18px; /* Adjust font size */
+    color: #fff; /* Adjust color */
+    margin-bottom: 20px; /* Add margin */
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #aee064;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #aee064, 0 0 25px #aee064, 0 0 50px #aee064, 0 0 200px #aee064;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.footer p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
