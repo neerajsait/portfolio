@@ -101,22 +101,46 @@ body {
 /* HOME */
 .home {
     display: flex;
-    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #2c3e50; /* Darker background for elegance */
     color: white;
-    padding: 50px 5%;
+    padding: 60px 5%;
     min-height: 100vh;
-    gap: 50px;
-    text-align: center; /* Ensures proper alignment on smaller screens */
+    gap: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .home-left,
 .home-right {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 600px; /* Prevents overly large content on bigger screens */
-    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.home-left h2,
+.home-left h1,
+.home-left h4 {
+    font-size: 22px;
+    margin-top: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ecf0f1; /* Light color for headings */
+}
+
+.home-left h1 {
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .responsive {
@@ -124,14 +148,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-/* Adjusting text sizes for responsiveness */
-.home-left h2,
-.home-left h1,
-.home-left h4 {
-    font-size: 18px;
-    margin-top: 10px;
+    border-radius: 15px; /* Smooth rounded corners */
 }
 
 /* Social Icons */
@@ -143,37 +160,63 @@ body {
 }
 
 .home-sci a {
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-    margin: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #34495e; /* Darker icon background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.home-sci a:hover {
+    background-color: #e74c3c; /* Highlight on hover */
 }
 
 /* Button */
 .btn {
-    padding: 10px 24px;
-    font-size: 14px;
+    padding: 12px 28px;
+    font-size: 16px;
     border-radius: 30px;
+    background-color: #3498db; /* Stylish blue */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
 }
 
 /* ABOUT SECTION */
 .about {
-    background-color: transparent;
+    background-color: #ecf0f1; /* Light background for contrast */
     position: relative;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text h2 {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
 .about-text p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #7f8c8d;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
@@ -182,7 +225,7 @@ body {
         flex-wrap: nowrap;
         text-align: left;
         justify-content: space-between;
-        padding: 70px 10%;
+        padding: 80px 10%;
     }
 
     .home-left {
@@ -197,43 +240,43 @@ body {
     .home-left h2,
     .home-left h1,
     .home-left h4 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .about {
-        width: 60%;
+        width: 70%;
     }
 }
 
 @media (max-width: 480px) {
     .home {
         padding: 40px 5%;
-        gap: 30px;
+        gap: 25px;
     }
 
     .home-left h2,
     .home-left h1,
     .home-left h4 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .home-sci a {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
     }
 
     .btn {
-        font-size: 13px;
-        padding: 8px 20px;
+        font-size: 15px;
+        padding: 10px 22px;
     }
 
     .about-text h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .about-text p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
