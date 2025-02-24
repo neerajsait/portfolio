@@ -6,8 +6,9 @@
     <title>MY portfolio</title>
     <link rel="stylesheet"  href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -20,11 +21,11 @@
             <a class="a-ele" href="#about" style="--i:6">About</a>
             <a class="a-ele" href="#skills" style="--i:3">Skills</a>
             <a class="a-ele" href="#Projects" style="--i:4">Projects</a>    
-            <a class="a-ele" href="#Certifications" style="--i:4">Certifications</a> 
+            <a class="a-ele" href="#certifications" style="--i:4">Certifications</a> 
             <a class="a-ele" href="#contact" style="--i:5">Contact</a>
         </div>
     </div>
-
+    <section id="home">
     <div class="home">
         <div class="home-left"> 
             <h2>Hello, It's Me</h2>  
@@ -46,6 +47,7 @@
             <img src="media/1.jpg" class="responsive">
         </div>
     </div>
+</section>
 
     <section id="about">
         <div class="education">
@@ -73,7 +75,7 @@
             </section>
         </div>
     </section>    
-    <section class="skills-section">
+    <section id="skills" class="skills-section">
         <h2>My Skills</h2>
         <div class="skills-container">
             <!-- Frontend -->
@@ -101,10 +103,12 @@
 
             <!-- Database -->
             <div class="skill-category">
-                <h3><i class="fas fa-database"></i> Database</h3>
+                <h3><i class="fas fa-database"></i> Database & IDEs</h3>
                 <div class="skills-list">
                     <span><i class="fas fa-database"></i> MySQL</span>
-                    <span><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span><i class="fas fa-code"></i> VS Code</span>
+                    <span><i class="fas fa-code"></i> Eclipse</span>
+                    <span><i class="fas fa-code"></i> PyCharm</span>
                     <span><i class="fas fa-database"></i> MongoDB</span>
                     
                 </div>
@@ -116,14 +120,15 @@
                 <div class="skills-list">
                     <span><i class="fab fa-github"></i> GitHub</span>
                     <span><i class="fab fa-figma"></i> Figma</span>
-                    <span><i class="fas fa-code"></i> VS Code</span>
-                    <span><i class="fas fa-code"></i> Eclipse</span>
-                    <span><i class="fas fa-code"></i> PyCharm</span>
                     <span><i class="fas fa-flask"></i> Postman</span>
+                    <span><i class="fas fa-chart-pie"></i> Tableau</span>
+                    <span><i class="fas fa-database"></i> Pandas & NumPy</span>
+                    <span><i class="fas fa-chart-bar"></i> Matplotlib & Seaborn</span>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="Projects">
         <h2 class="subtitle"><span>Projects</span></h2>
@@ -153,38 +158,53 @@
                 </div>
             </div>  
         </div>
-        <section class="certifications-section">
+        <section id="certifications" class="certifications-section">
             <h2>My Certifications</h2>
             <div class="certifications-container">
                 <!-- Postman API -->
                 <div class="certification">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png" alt="Postman API Certification">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/02/Postman-Emblem.png" alt="Postman API Certification">
                     <h3>Postman API Fundamentals</h3>
                     <p>Issued by Postman</p>
                 </div>
         
                 <!-- Salesforce AI Associate -->
                 <div class="certification">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Salesforce.com_logo.svg/800px-Salesforce.com_logo.svg.png" alt="Salesforce AI Associate">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/06/Salesforce-logo.png" alt="Salesforce AI Associate">
                     <h3>Salesforce AI Associate</h3>
                     <p>Issued by Salesforce</p>
                 </div>
         
                 <!-- Microsoft AI-900 -->
                 <div class="certification">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft AI-900">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/04/Microsoft-logo.png" alt="Microsoft AI-900">
                     <h3>AI-900: Azure AI Fundamentals</h3>
                     <p>Issued by Microsoft</p>
                 </div>
         
                 <!-- AWS Certified Cloud Practitioner -->
                 <div class="certification">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Certified Cloud Practitioner">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" alt="AWS Certified Cloud Practitioner">
                     <h3>AWS Certified Cloud Practitioner</h3>
                     <p>Issued by Amazon AWS</p>
                 </div>
+        
+                <!-- NPTEL Java Programming -->
+                <div class="certification">
+                    <img src="https://nptel.ac.in/assets/images/logo.png" alt="NPTEL Java Certification">
+                    <h3>NPTEL Java Programming</h3>
+                    <p>Issued by NPTEL (IIT)</p>
+                </div>
+        
+                <!-- Linguaskills (B1 in English) -->
+                <div class="certification">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Cambridge_Assessment_English_logo.svg" alt="Linguaskills English Certification">
+                    <h3>Linguaskills (B1 in English)</h3>
+                    <p>Issued by Cambridge English</p>
+                </div>
             </div>
         </section>
+        
         
         
     </section>
