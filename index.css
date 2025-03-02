@@ -64,6 +64,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.a-ele {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Adjust as needed */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Optional for better visibility */
+    padding: 0; /* Remove padding that may cause a box effect */
+    margin: 0 10px; /* Adjust spacing */
+    background: none; /* Ensure no background color */
+    border: none; /* Remove any borders */
+}
+
+
+
+
+
+
+
+
 
 
 /* NAVBAR */
