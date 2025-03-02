@@ -75,123 +75,73 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* NAVBAR */
+/* NAVBAR CONTAINER */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 10px 20px;
+    background-color: black; /* Change as needed */
+    padding: 15px 30px;
     width: 100%;
-    position: fixed; /* Keeps navbar fixed on scroll */
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures navbar is above other elements */
+    z-index: 1000;
 }
 
-/* Navbar Title */
-.navbar .navbar-left h3 {
+/* Left Side - Name */
+.navbar-left .nav-h {
     font-family: 'Electrolize', sans-serif;
     font-size: 20px;
     color: white;
     margin: 0;
 }
 
-/* Navbar Links */
-.navbar .navbar-right {
+/* Right Side - Navigation Links */
+.navbar-right {
     display: flex;
-    gap: 10px; /* Adds spacing between links */
+    gap: 20px; /* Space between links */
 }
 
-/* Navbar Links Styling */
-.navbar .navbar-right .a-ele {
-    padding: 10px 20px;
+/* Navbar Links */
+.navbar-right .a-ele {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+    font-family: 'Electrolize', sans-serif;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
 
-.navbar .navbar-right .a-ele:hover {
-    background-color: white;
-    color: black;
+/* Hover Effect */
+.navbar-right .a-ele:hover {
+    color: cyan; /* Change hover color */
 }
 
-/* Responsive Navigation */
-@media (max-width: 1024px) { /* Tablets */
+/* Optional: Remove Box Appearance */
+.navbar-right .a-ele {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .navbar {
-        padding: 8px 15px;
-    }
-
-    .navbar .navbar-left h3 {
-        font-size: 18px;
-    }
-
-    .navbar .navbar-right .a-ele {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-}
-
-@media (max-width: 768px) { /* Mobile devices */
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .navbar .navbar-left h3 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .navbar .navbar-right {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        margin-top: 10px;
     }
 
-    .navbar .navbar-right .a-ele {
-        font-size: 16px;
-        padding: 8px 12px;
-        width: 80%;
+    .navbar-right {
+        flex-direction: column;
+    }
+
+    .navbar-right .a-ele {
         text-align: center;
     }
 }
 
-@media (max-width: 480px) { /* Small phones */
-    .navbar .navbar-left h3 {
-        font-size: 16px;
-    }
-
-    .navbar .navbar-right .a-ele {
-        font-size: 14px;
-        padding: 6px 10px;
-        width: 90%;
-    }
-}
-
-.navbar .navbar-right .a-ele {
-    display: inline-block;
-    min-width: 100px; /* Ensure width for text */
-}
-.a-ele {
-    text-decoration: none; /* Removes underlines */
-    color: white; /* Adjusts text color */
-    font-size: 18px; /* Sets font size */
-    font-weight: bold; /* Makes text bold */
-    padding: 0; /* Removes padding */
-    margin: 0 10px; /* Adds horizontal spacing */
-    background: none; /* Ensures no background color */
-    border: none; /* Removes borders */
-}
-.a-ele:hover {
-    color: #ccc; /* Changes text color on hover */
-    /* Avoid adding background or border styles here */
-}
 
 
 
