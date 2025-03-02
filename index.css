@@ -64,16 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.a-ele {
-    text-decoration: none; /* Remove underlines */
-    color: white; /* Adjust as needed */
-    font-size: 18px; /* Adjust font size */
-    font-weight: bold; /* Optional for better visibility */
-    padding: 0; /* Remove padding that may cause a box effect */
-    margin: 0 10px; /* Adjust spacing */
-    background: none; /* Ensure no background color */
-    border: none; /* Remove any borders */
-}
+
 
 
 
@@ -182,6 +173,31 @@ h1, h2, h3, h4, h5, h6 {
         width: 90%;
     }
 }
+
+
+
+.a-ele {
+    text-decoration: none; /* Removes underlines */
+    color: white; /* Adjusts text color */
+    font-size: 18px; /* Sets font size */
+    font-weight: bold; /* Makes text bold */
+    padding: 0; /* Removes padding */
+    margin: 0 10px; /* Adds horizontal spacing */
+    background: none; /* Ensures no background color */
+    border: none; /* Removes borders */
+}
+.a-ele:hover {
+    color: #ccc; /* Changes text color on hover */
+    /* Avoid adding background or border styles here */
+}
+
+
+
+
+
+
+
+
 
 
 
