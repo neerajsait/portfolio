@@ -174,8 +174,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
-
+.navbar .navbar-right .a-ele {
+    display: inline-block;
+    min-width: 100px; /* Ensure width for text */
+}
 .a-ele {
     text-decoration: none; /* Removes underlines */
     color: white; /* Adjusts text color */
