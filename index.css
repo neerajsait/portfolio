@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
     color: cyan;
 }
 
+
+
+
+
 /* HOME SECTION */
 .home {
     display: flex;
@@ -86,24 +90,26 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     gap: 50px;
     flex-wrap: wrap;
+    flex-direction: row; /* Default flex direction to place .home-left on the left and .home-right on the right */
 }
 
 .home-left {
     width: 50%;
     padding-right: 20px;
+    text-align: left; /* Align text to the left since it’s on the left side */
 }
 
 .home-right {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align the image to the right within .home-right */
 }
 
 .responsive {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0; /* Remove margin to ensure the image stays flush with the right */
 }
 
 .home-left h2 { font-size: 24px; }
@@ -113,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .home-sci {
     display: flex;
     margin-top: 20px;
+    justify-content: flex-start; /* Align social icons to the left to match text alignment */
 }
 
 .home-sci a {
@@ -158,16 +165,7 @@ h1, h2, h3, h4, h5, h6 {
                 0 0 200px #aee064;
 }
 
-/* ABOUT SECTION */
-.about {
-    background-color: transparent;
-    text-align: center;
-    padding: 50px 10%;
-    position: relative;
-}
 
-.about-text h2 { font-size: 30px; }
-.about-text p { font-size: 18px; line-height: 1.6; }
 
 /* EDUCATION */
 .education {
@@ -186,19 +184,24 @@ h1, h2, h3, h4, h5, h6 {
 .subtitle span { color: #aee064; }
 
 .time-line {
-    width: 1000px;
-    margin: 100px auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     position: relative;
+    padding: 20px 0;
+    left: -300px; /* Increased left shift (previously -200px, now -300px; adjust as needed, e.g., -350px, -250px) */
 }
 
 .time-line::after {
     content: '';
     position: absolute;
-    right: 50%;
+    left: 75%; /* Keep the line to the right (adjust as needed, e.g., 55%, 65%) */
+    transform: translateX(-50%); /* Ensure perfect centering relative to the new left position */
     height: 100%;
     width: 5px;
-    background: linear-gradient(#aee064,#aee064);
+    background: linear-gradient(#aee064, #aee064);
     top: 0;
+    bottom: 0;
     border-radius: 50%;
     animation: LineAnimated 5s linear forwards;
 }
@@ -211,10 +214,12 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 47%;
     position: relative;
-    padding: 10px 10px;
+    padding: 20px 10px;
+    margin-bottom: 80px; /* Increased space to ensure line connects with all points */
     animation: Animate-Container 1s linear forwards;
     opacity: 0;
     animation-delay: var(--dly);
+    left: 0; /* Ensure all containers start from the left within the shifted timeline */
 }
 
 @keyframes Animate-Container {
@@ -222,32 +227,63 @@ h1, h2, h3, h4, h5, h6 {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.container:nth-child(even) { right: -50%; }
+.container:nth-child(odd) {
+    left: 0; /* Odd containers stay on the far left */
+}
 
-.container:nth-child(even)::before,
-.container:nth-child(odd)::before {
+.container:nth-child(even) {
+    left: 53%; /* Even containers positioned to the right of odd containers, but still within the left-shifted timeline */
+}
+
+.container:nth-child(odd)::before,
+.container:nth-child(even)::before {
     content: '';
     position: absolute;
     height: 20px;
     width: 20px;
-    background: linear-gradient(#aee064,#aee064);
-    top: 0;
-    border-radius: 25px;
+    background: linear-gradient(#aee064, #aee064);
+    top: 30px; /* Align with text content */
+    border-radius: 50%;
     z-index: 10;
 }
 
-.container:nth-child(even)::before { left: -12px; }
-.container:nth-child(odd)::before { right: -18px; }
+.container:nth-child(odd)::before {
+    right: calc( -25px); /* Adjusted to touch the line from the left container, accounting for increased left shift */
+}
+
+.container:nth-child(even)::before {
+    left: calc(-55px); /* Adjusted to touch the line from the right container, accounting for increased left shift */
+}
 
 .text-content {
     padding: 20px 30px;
     background: whitesmoke;
     border-radius: 13px;
     box-shadow: 0 5px 10px #fff;
+    position: relative;
+    min-height: 140px; /* Increased height to accommodate text and align with dots */
 }
 
 .text-content h2 { font-size: 25px; color: #000; }
 .text-content p { font-size: 13px; margin-top: 10px; color: #000; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .time-line {
+        width: 90%;
+        left: -200px; /* Increased left shift for mobile (adjust as needed) */
+    }
+    .time-line::after { left: 50px; } /* Move line to a fixed position on mobile for simplicity */
+    .container {
+        width: 100%;
+        left: 0;
+        margin-bottom: 50px; /* Reduced spacing on mobile */
+    }
+    .container:nth-child(odd)::before,
+    .container:nth-child(even)::before {
+        left: 50px; /* Center dot on mobile to connect with the line */
+    }
+}
 
 /* SKILLS SECTION */
 .skills-section {
@@ -530,4 +566,4 @@ h1, h2, h3, h4, h5, h6 {
     .about { padding: 20px 5%; }
     .about-text h2 { font-size: 20px; }
     .about-text p { font-size: 12px; }
-}
+}    
