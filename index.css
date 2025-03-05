@@ -654,3 +654,50 @@ h1, h2, h3, h4, h5, h6 {
     .about-text h2 { font-size: 20px; }
     .about-text p { font-size: 12px; }
 }
+
+
+
+
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-left, .home-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right img {
+        max-width: 80%;
+    }
+
+    .education .time-line {
+        left: 0;
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        left: 0 !important;
+        margin: 20px auto;
+    }
+
+    .container:nth-child(odd), .container:nth-child(even) {
+        left: 0 !important;
+    }
+}
